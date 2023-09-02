@@ -1,0 +1,8 @@
+.popular h1 , .popular p{
+    width: max-content;
+    margin: 20px auto;
+}
+
+.popular h1{
+    font-size: 3rem;
+}

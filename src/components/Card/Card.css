@@ -1,0 +1,30 @@
+.RecentTrips .container .card{
+    width: 300px;
+    border-radius: 13px;
+    padding: 10px;
+    box-shadow: 0 5px 25px 2px rgba(0, 0, 0, 0.11);
+}
+
+.RecentTrips .container .card .image{
+    width: 100%;
+    height: 187px;
+    border-radius: 13px;
+    overflow: hidden;
+}
+
+.RecentTrips .container .card img:hover{
+    transform: scale(1.5);
+}
+
+.RecentTrips .container .card .image img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s all;
+}
+
+.RecentTrips .container .card h2{
+    margin: 10px 0;
+}
+.RecentTrips .container .card p{
+    width: 100%;
+}
