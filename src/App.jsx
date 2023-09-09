@@ -10,18 +10,35 @@ import AboutPage from './pages/AboutPage'
 import ContactPage from './pages/ContactPage'
 import ServicePage from './pages/ServicePage'
 import Test from './components/Axios/Axios'
+import Effect from './components/useEffect/useEffect'
+import CdnBootstrap from './components/Bootsrtap/CdnBootstrap'
+import Bootstrap from './components/Bootsrtap/Bootstrap'
+import { createContext, useState } from 'react'
+import GrandParent from './components/SendInfoByProps/GrandParent'
+import Parent from './components/memo/Parent'
+
+export const UserName = createContext(null)
+
 function App() {
+  const [name, setname] = useState("Mohammed");
 
   return (
     <>
-{/*       <NavBar elements ={[{name: "home" , path :"/"}, {name: "about" , path :"/about"} , {name: "service" , path :"/service"} , {name: "contact" , path :"/contact"} ]} />
+      {/*       <NavBar elements ={[{name: "home" , path :"/"}, {name: "about" , path :"/about"} , {name: "service" , path :"/service"} , {name: "contact" , path :"/contact"} ]} />
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/about' element={<AboutPage />} />
         <Route path='/contact' element={<ContactPage />} />
         <Route path='/service' element={<ServicePage />} />
       </Routes> */}
-      <Test />
+      {/* <Test /> */}
+      {/* <Effect /> */}
+      {/* <CdnBootstrap /> */}
+      {/* <Bootstrap /> */}
+{/*       <UserName.Provider value={name}>
+        <GrandParent />
+      </UserName.Provider> */}
+      <Parent />
     </>
   )
 }
